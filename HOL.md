@@ -241,14 +241,14 @@ In this task, you will install and configure an Apache HTTP Server and MySQL Dat
 
 	_Configuring System Services_
 
-1. Scroll down until you find **mysql** and press **ALT+E** to enable the service. Wait until the service is running and press **Enter** on the confurmation message.
+1. Scroll down until you find **mysql** and press **ALT+E** to enable the service. Wait until the service is running and press **Enter** on the confirmation message.
 
 	![Enabling MySQL service](images/enabling-mysql-service.png?raw=true)
 
 	_Enabling MySQL service_
 
 
-1. Find **apache** and press **ALT+E** to enable the service too. Wait until the service is running and press **Enter** on the confurmation message. Press **F10** to save the settings.
+1. Find **apache** and press **ALT+E** to enable the service too. Wait until the service is running and press **Enter** on the confirmation message. Press **F10** to save the settings.
 
 1. Press **ALT+Q** to exit **YaST2**.
 
