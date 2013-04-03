@@ -1,4 +1,4 @@
-<a name="handsonlab" />
+﻿<a name="handsonlab" />
 # Introduction to Windows Azure Virtual Machines (Linux) #
 
 ---
@@ -8,7 +8,7 @@
 
 Using Windows Azure as your IaaS platform will enable you to create and manage your infrastructure quickly, provisioning and accessing any host ubiquitously. Grow your business through the cloud-based infrastructure, reducing the costs of licensing, provisioning and backup.
 
-In this Hands-On Lab, you will learn how to use the Windows Azure IaaS platform to provision Linux based VMs in the cloud and manage it remotely. 
+In this Hands-On Lab, you will learn how to use the Windows Azure IaaS platform to provision Linux based Virtual Maciness in the cloud and manage it remotely. 
 
 <a name="Objectives" />
 ### Objectives ###
@@ -33,17 +33,18 @@ In this hands-on lab, you will learn how to:
 
 This hands-on lab includes the following exercises:
 
-1. [Creating a Linux VM in Windows Azure](#Exercise1)
+1. [Creating a Linux Virtual Machine in Windows Azure](#Exercise1)
 
-1. [Installing and Configuring the VM](#Exercise2)
+1. [Installing and Configuring the Virtual Machine](#Exercise2)
 
 1. [Installing and Configuring Drupal](#Exercise3)
  
 Estimated time to complete this lab: **45 minutes**.
 
+---
 
 <a name="Exercise1" />
-### Exercise 1: Creating a Linux VM in Windows Azure ###
+### Exercise 1: Creating a Linux Virtual Machines in Windows Azure ###
 
 In this exercise, you will learn how to provision Linux Virtual Machines in the Azure portal.
 	
@@ -51,48 +52,48 @@ In this exercise, you will learn how to provision Linux Virtual Machines in the 
 #### Task 1 - Creating a New Linux Virtual Machine ####
 
 1. Open Internet Explorer and browse [https://manage.windowsazure.com](https://manage.windowsazure.com) to enter the Windows Azure portal. Then, log in with your credentials.
-1. In the menu located at the bottom, select **New | Virtual Machine | From Gallery** to start creating a new virtual machine.
+1. In the menu located at the bottom, select **Compute** | **New Virtual Machine | From Gallery** to start creating a new virtual machine.
 
 	 
 	![Creating a new Virtual Machine](images/creating-a-new-virtual-machine.png?raw=true)
 
 	_Creating a new Virtual Machine_
  
-	1. In the **VM OS Selection** page, click **Platform Images** on the left menu and select the **OpenSUSE** OS image from the list. Click the arrow to continue.	
+	1. In the **Virtual Machine operating system selection** page, click **Platform Images** on the left menu and select the **OpenSUSE** OS image from the list. Click the arrow to continue.	
 
 		![Selecting OpenSUSE from the image list](images/creating-a-vm-suse.png?raw=true)	
 	 
 		_Selecting OpenSUSE from the image list_
 
-	1. In the **VM Configuration** page, enter the **Virtual Machine Name**, set the **New User Name** to **Administrator**, the **Password** and the **Size** for the VM. Click the **right arrow** to continue.
+	1. In the **Virtual Machine Configuration** page, enter the **Virtual Machine Name**, set the **New User Name** to **Administrator**, the **Password** and the **Size** for the Virtual Machine. Click the **right arrow** to continue.
 
 		![Configuring a Custom VM](images/creating-a-vm-configuration.png?raw=true)	
 	 
-		_Creating a VM - Configuration_
+		_Creating a Virtual Machine - Configuration_
  
 		>**Note:** It is suggested to use secure passwords for admin users, as Windows Azure virtual machines could be accessible from the Internet knowing just their DNS.
 
 		>You can also read this document on the Microsoft Security website that will help you select a secure password:  [http://www.microsoft.com/security/online-privacy/passwords-create.aspx](http://www.microsoft.com/security/online-privacy/passwords-create.aspx)
  
-	1. In the **VM Mode** page, select **Standalone Virtual Machine**, enter the **DNS Name**, you can automatically generate a new Storage Account or select one you already own. Then, select the **Region/Affinity group/Virtual Network** value (by default, West US) and select the **subscription**. Click the **right arrow** to continue. 
+	1. In the **Virtual Machine Mode** page, select **Standalone Virtual Machine**, enter the **DNS Name**, you can automatically generate a new Storage Account or select one you already own. Then, select the **Region/Affinity group/Virtual Network** value  and select the **subscription**. Click the **right arrow** to continue. 
 
 		![Configuring a Custom VM, VM Mode](images/creating-a-vm-vm-mode.png?raw=true)
 	 
-		_Creating a VM - VM Mode_
+		_Creating a Virtual Machine - Virtual Machine Mode_
  
-	1. In the **VM Options** page, click the button to create a new VM.
+	1. In the **Virtual Machine Options** page, click the button to create a new Virtual Machine.
 
 		![Creating a VM - VM Options](images/creating-a-vm--vm-options.png?raw=true "Creating a VM - VM Options")
 
-		_Creating a VM - VM Options_
+		_Creating a Virtual Machine - Virtual Machine Options_
  
-1. In the **Virtual Machines** section, you will see the VM you created with a _provisioning_ status. Wait until it changes to _Running_ in order to continue with the following step.
+1. In the **Virtual Machines** section, you will see the Virtual Machine you created with a _provisioning_ status. Wait until it changes to _Running_ in order to continue with the following step.
 
 	![Creating Linux VM](images/creating-linux-vm.png?raw=true)
 	 
-	_Creating Linux VM_
+	_Creating Linux Virtual Machine_
 
-1. Now, you will create the endpoints required to manage the VM. To do this, select the VM to go to the **Dashboard** page and then click **Endpoints**.
+1. Now, you will create the endpoints required to manage the Virtual Machine. To do this, select the Virtual Machine to go to the **Dashboard** page and then click **Endpoints**.
 
 1. Click **Add Endpoint**, select **Add Endpoint** option and then click the **right arrow** to continue.
 
@@ -116,21 +117,23 @@ Now that you have provisioned and configured a Linux Virtual Machine, you will c
 >**Note:** You can download Putty, a free SSH client for Windows, here: [http://www.putty.org/](http://www.putty.org/)
 
 
-1.	In the Windows Azure Portal, select the Linux VM from the list to enter the **Dashboard**. Take note of the **SSH Details** field at the "quick glance" section, which is the public address you will use to access and connect to the virtual machine using the SSH client.
+1.	In the Windows Azure Portal, select the Linux Virtual Machine from the list to enter the **Dashboard**. Take note of the **SSH Details** field at the "quick glance" section, which is the public address you will use to access and connect to the virtual machine using the SSH client.
 
     ![SSH Endpoint](images/ssh-endpoint.png?raw=true "SSH Endpoint")
 
     _SSH Endpoint_
 
-1. Open the Putty client (or any other SSH client) and create a new connection to the VM, using address and port from the previous step.
+1. Open the Putty client (or any other SSH client) and create a new connection to the Virtual Machine, using address and port from the previous step.
 
-	![Connecting to the Linux VM via Putty Client](images/connecting-to-the-linux-vm-via-putty-client.png?raw=true)
+	![Connecting to the Linux Virtual Machine via Putty Client](images/connecting-to-the-linux-vm-via-putty-client.png?raw=true)
 	 
-	_Connecting to the Linux VM via Putty Client_
+	_Connecting to the Linux Virtual Machine via Putty Client_
 
-	> **Note:** You can verify the public port for the SSH connection in the **Endpoints** section of the VM.
+	> **Note:** You can verify the public port for the SSH connection in the **Endpoints** section of the Virtual Machine. When using Putty, make sure you enable TCP Keepalives and set it with a value greater than 5.
  
-1. Use the VM credentials to login.
+1. Use the Virtual Machine credentials to login.
+
+	> **Note:** When completing the password, the cursor won't move
 
 	![Logging in to the Linux Virtual Machine](images/logging-in-to-the-linux-virtual-machine.png?raw=true)
 
@@ -146,15 +149,17 @@ Now that you have provisioned and configured a Linux Virtual Machine, you will c
 
 	_Logging in with Administrator rights_
 
-<a name="Exercise2" />
-### Exercise 2: Installing and Configuring the VM ###
+---
 
-In this exercise, you will learn how to install and configure a Web Server in the Linux VM by using a SSH client. First, you will install the Apache Web server and the MySQL database server by using Yast2 application. Then, you will configure the VM and create an example database. 
+<a name="Exercise2" />
+### Exercise 2: Installing and Configuring the Virtual Machine ###
+
+In this exercise, you will learn how to install and configure a Web Server in the Linux Virtual Machine by using a SSH client. First, you will install the Apache Web server and the MySQL database server by using Yast2 application. Then, you will configure the Virtual Machine and create an example database. 
 
 >**Note:** If you have not run Exercise 1, make sure you have the following items ready before proceeding with Exercise 2:
   
 > - A Linux Virtual Machine created in Windows Azure Portal.
-> - A TCP Endpoint enabled in port 22.  
+> - A TCP Endpoint enabled with private port 22.
 > - A TCP Endpoint enabled in port 80.
 
 <a name="Ex2Task1" />
@@ -173,7 +178,10 @@ In this task, you will install and configure an Apache HTTP Server and MySQL Dat
 	zypper install yast2-packager
 	zypper install yast2-network
 	zypper install yast2-http-server
+	zypper install yast2-runlevel
 	````
+
+	>**Note**: If you get the following prompt "Do you want to reject the key, trust temporarily, or trust always? [r/t/a/?]", press a and then enter.
 
 1. To install the prerequisites for Drupal you will use **Yast2** to automatically install Apache and MySQL with their dependencies. In the terminal, execute **Yast2**. This will open the **Yast2** application.
 
@@ -194,6 +202,8 @@ In this task, you will install and configure an Apache HTTP Server and MySQL Dat
 	_Selecting the Patterns Filter_
 
 1. Scroll down the options until you find **Web and LAMP Server**. Press **ENTER** to select it, then press **ALT+T**, select **All listed packages...** and **Install All**.
+
+	>**NOTE**: When pressing enter you will see a plus beside Web and Lamp Server on the left side of the screen 
 
 	![Installing Web and LAMP Server](images/installing-web-and-lamp-server.png?raw=true)
 
@@ -231,13 +241,18 @@ In this task, you will install and configure an Apache HTTP Server and MySQL Dat
 
 	_Configuring System Services_
 
-1. Scroll down until you find **mysql** and press **ALT+E** to enable the service. Wait until the service is running and press **Enter** on the confurmation message. Press **F10** to save the settings.
+1. Scroll down until you find **mysql** and press **ALT+E** to enable the service. Wait until the service is running and press **Enter** on the confurmation message.
 
 	![Enabling MySQL service](images/enabling-mysql-service.png?raw=true)
 
 	_Enabling MySQL service_
 
+
+1. Find **apache** and press **ALT+E** to enable the service too. Wait until the service is running and press **Enter** on the confurmation message. Press **F10** to save the settings.
+
 1. Press **ALT+Q** to exit **YaST2**.
+
+---
 
 <a name="Exercise3" />
 ### Exercise 3 - Installing and Configuring Drupal ###
@@ -306,7 +321,7 @@ In this task, you will install and configure a Drupal portal on your Windows Azu
 
 	_Granting permissions in MySQL_
 	
-1. Open Internet Explorer and locate the virtual machine DNS Name. Browse to _https://[YOUR-DNS-URL]/drupal_ to complete Drupal installation.
+1. Open Internet Explorer and locate the virtual machine DNS Name. Browse to _http://[YOUR-DNS-URL]/drupal_ to complete Drupal installation.
  
 	![Opening Drupal for the first time](images/opening-drupal-for-the-first-time.png?raw=true)
 
