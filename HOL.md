@@ -22,7 +22,7 @@ In this hands-on lab, you will learn how to:
 <a name="Prerequisites" />
 ### Prerequisites ###
 
-- A Windows Azure subscription with the Virtual Machines Preview enabled - [sign up for a free trial](http://aka.ms/WATK-FreeTrial)
+- A Windows Azure subscription - [sign up for a free trial](http://aka.ms/WATK-FreeTrial)
 
 > **Note:** This lab was designed to use **OpenSUSE** linux distribution when creating the new Virtual Machine in Windows Azure.
 
