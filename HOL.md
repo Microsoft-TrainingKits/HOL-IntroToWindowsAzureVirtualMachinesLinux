@@ -8,7 +8,7 @@
 
 Using Windows Azure as your IaaS platform will enable you to create and manage your infrastructure quickly, provisioning and accessing any host ubiquitously. Grow your business through the cloud-based infrastructure, reducing the costs of licensing, provisioning and backup.
 
-In this Hands-On Lab, you will learn how to use the Windows Azure IaaS platform to provision Linux based Virtual Maciness in the cloud and manage it remotely. 
+In this hands-on lab, you will learn how to use the Windows Azure IaaS platform to provision Linux based Virtual Machines in the cloud and manage it remotely. 
 
 <a name="Objectives" />
 ### Objectives ###
@@ -348,3 +348,8 @@ In this task, you will install and configure a Drupal portal on your Windows Azu
 	_Drupal CMS home page_
 	
 ---
+
+<a name='Summary' />
+## Summary ##
+
+In this hands-on lab, you have learnt how to use the Windows Azure IaaS platform to provision Linux based Virtual Machines in the cloud and manage it remotely.
