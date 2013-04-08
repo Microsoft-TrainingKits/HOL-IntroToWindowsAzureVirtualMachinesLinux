@@ -46,7 +46,7 @@ Estimated time to complete this lab: **45 minutes**.
 <a name="Exercise1" />
 ### Exercise 1: Creating a Linux Virtual Machines in Windows Azure ###
 
-In this exercise, you will learn how to provision Linux Virtual Machines in the Azure portal.
+In this exercise, you will learn how to provision a Linux Virtual Machine in the Azure portal.
 	
 <a name="Ex1Task1" />
 #### Task 1 - Creating a New Linux Virtual Machine ####
@@ -101,7 +101,7 @@ In this exercise, you will learn how to provision Linux Virtual Machines in the 
 
 	_Adding a new Endpoint_
 
-1. In the **Specify endpoint details** page, set the **Name** to _web_, the **Protocol** to _TCP_ and the **Public Port** and **Private Port** to _80_.
+1. In the **Specify the details of the endpoint** page, set the **Name** to _webport_, the **Protocol** to _TCP_ and the **Public Port** and **Private Port** to _80_.
 
 	![New Endpoint Details](Images/new-endpoint-details.png?raw=true "New Endpoint Details")
 
@@ -248,7 +248,7 @@ In this task, you will install and configure an Apache HTTP Server and MySQL Dat
 	_Enabling MySQL service_
 
 
-1. Find **apache** and press **ALT+E** to enable the service too. Wait until the service is running and press **Enter** on the confirmation message. Press **F10** to save the settings.
+1. Find **apache2** and press **ALT+E** to enable the service too. Wait until the service is running and press **Enter** on the confirmation message. Press **F10** to save the settings.
 
 1. Press **ALT+Q** to exit **YaST2**.
 
