@@ -59,33 +59,33 @@ In this exercise, you will learn how to provision a Linux Virtual Machine in the
 
 	_Creating a new Virtual Machine_
  
-	1. In the **Virtual Machine operating system selection** page, click **Platform Images** on the left menu and select the **OpenSUSE** OS image from the list. Click the arrow to continue.	
+1. In the **Virtual Machine operating system selection** page, click **Platform Images** on the left menu and select the **OpenSUSE** OS image from the list. Click the arrow to continue.	
 
-		![Selecting OpenSUSE from the image list](Images/creating-a-vm-suse.png?raw=true)	
+	![Selecting OpenSUSE from the image list](Images/creating-a-vm-suse.png?raw=true)	
 	 
-		_Selecting OpenSUSE from the image list_
+	_Selecting OpenSUSE from the image list_
 
-	1. In the **Virtual Machine Configuration** page, enter the **Virtual Machine Name**, set the **New User Name** to **Administrator**, the **Password** and the **Size** for the Virtual Machine. Click the **right arrow** to continue.
+1. In the **Virtual machine Configuration** page, enter a **Virtual Machine Name**, provide a user name for the **New User Name** field and a password for the **New Password** and **Confirm Password** fields. Lastly, set the Virtual Machine **Size** to _Small_ and click **Next** to continue.
 
-		![Configuring a Custom VM](Images/creating-a-vm-configuration.png?raw=true)	
+	![Configuring a Custom VM](Images/creating-a-vm-configuration.png?raw=true)	
 	 
-		_Creating a Virtual Machine - Configuration_
+	_Creating a Virtual Machine - Configuration_
  
-		>**Note:** It is suggested to use secure passwords for admin users, as Windows Azure virtual machines could be accessible from the Internet knowing just their DNS.
+	>**Note:** It is suggested to use secure passwords for admin users, as Windows Azure virtual machines could be accessible from the Internet knowing just their DNS.
 
-		>You can also read this document on the Microsoft Security website that will help you select a secure password:  [http://www.microsoft.com/security/online-privacy/passwords-create.aspx](http://www.microsoft.com/security/online-privacy/passwords-create.aspx)
+	>You can also read this document on the Microsoft Security website that will help you select a secure password:  [http://www.microsoft.com/security/online-privacy/passwords-create.aspx](http://www.microsoft.com/security/online-privacy/passwords-create.aspx)
  
-	1. In the **Virtual Machine Mode** page, select **Standalone Virtual Machine**, enter the **DNS Name**, you can automatically generate a new Storage Account or select one you already own. Then, select the **Region/Affinity group/Virtual Network** value  and select the **subscription**. Click the **right arrow** to continue. 
+1. In the **Virtual Machine Mode** page, select **Standalone Virtual Machine**, enter the **DNS Name**, you can automatically generate a new Storage Account or select one you already own. Then, select the **Region/Affinity group/Virtual Network** value  and select the **subscription**. Click the **right arrow** to continue. 
 
-		![Configuring a Custom VM, VM Mode](Images/creating-a-vm-vm-mode.png?raw=true)
+	![Configuring a Custom VM, VM Mode](Images/creating-a-vm-vm-mode.png?raw=true)
 	 
-		_Creating a Virtual Machine - Virtual Machine Mode_
+	_Creating a Virtual Machine - Virtual Machine Mode_
  
-	1. In the **Virtual Machine Options** page, click the button to create a new Virtual Machine.
+1. In the **Virtual Machine Options** page, click the button to create a new Virtual Machine.
 
-		![Creating a VM - VM Options](Images/creating-a-vm--vm-options.png?raw=true "Creating a VM - VM Options")
+	![Creating a VM - VM Options](Images/creating-a-vm--vm-options.png?raw=true "Creating a VM - VM Options")
 
-		_Creating a Virtual Machine - Virtual Machine Options_
+	_Creating a Virtual Machine - Virtual Machine Options_
  
 1. In the **Virtual Machines** section, you will see the Virtual Machine you created with a _provisioning_ status. Wait until it changes to _Running_ in order to continue with the following step.
 
