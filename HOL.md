@@ -44,7 +44,7 @@ Estimated time to complete this lab: **45 minutes**.
 ---
 
 <a name="Exercise1" />
-### Exercise 1: Creating a Linux Virtual Machines in Windows Azure ###
+### Exercise 1: Creating a Linux Virtual Machine in Windows Azure ###
 
 In this exercise, you will learn how to provision a Linux Virtual Machine in the Azure portal.
 	
