@@ -1,4 +1,4 @@
-# Introduction to Windows Azure Virtual Machines (Linux) #
+﻿# Introduction to Windows Azure Virtual Machines (Linux) #
 
 ## Hands-on Lab ##
 
@@ -6,7 +6,7 @@
 
 Hands-on Labs are sets of step-by-step guides that are designed to help you learn how to use key Windows Azure services and features. Each Lab provides instructions to guide you through the process of developing a complete application.
 
-In this Hands-on Lab, you will learn how to use the Windows Azure IaaS platform to provision Linux based VMs in the cloud and manage it remotely.
+In this Hands-on Lab, you will learn how to use the Windows Azure IaaS platform to provision Linux based Virtual Machines in the cloud and manage it remotely.
 
 > **Note:** You can download the latest build of the Windows Azure Training Kit which includes a tested version of this HOL from here: http://www.microsoft.com/download/en/details.aspx?id=8396.
 
