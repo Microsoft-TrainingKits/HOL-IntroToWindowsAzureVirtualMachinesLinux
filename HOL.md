@@ -53,7 +53,6 @@ In this exercise, you will learn how to provision a Linux Virtual Machine in the
 
 1. Open Internet Explorer and browse [https://manage.windowsazure.com](https://manage.windowsazure.com) to enter the Windows Azure portal. Then, log in with your credentials.
 1. In the menu located at the bottom, select **Compute** | **New Virtual Machine | From Gallery** to start creating a new virtual machine.
-
 	 
 	![Creating a new Virtual Machine](Images/creating-a-new-virtual-machine.png?raw=true)
 
@@ -65,9 +64,9 @@ In this exercise, you will learn how to provision a Linux Virtual Machine in the
 	 
 	_Selecting OpenSUSE from the image list_
 
-1. In the **Virtual machine Configuration** page, enter a **Virtual Machine Name**, provide a user name for the **New User Name** field and a password for the **New Password** and **Confirm Password** fields. Lastly, set the Virtual Machine **Size** to _Small_ and click **Next** to continue.
+1. In the **Virtual Machine Configuration** page, enter a **Virtual Machine Name**. In the **Authentication** section, uncheck **Upload compatible ssh key for authentication** and check **Provide password**. Provide a password for the **New Password** and **Confirm Password** fields. Lastly, set the Virtual Machine **Size** to _Small_ and click **Next** to continue.
 
-	![Configuring a Custom VM](Images/creating-a-vm-configuration.png?raw=true)	
+	![Configuring a Custom Virtual Machine](Images/creating-a-vm-configuration.png?raw=true)	
 	 
 	_Creating a Virtual Machine - Configuration_
  
@@ -83,7 +82,7 @@ In this exercise, you will learn how to provision a Linux Virtual Machine in the
  
 1. In the **Virtual Machine Options** page, click the button to create a new Virtual Machine.
 
-	![Creating a VM - VM Options](Images/creating-a-vm--vm-options.png?raw=true "Creating a VM - VM Options")
+	![Creating a VM - VM Options](Images/creating-a-vm--vm-options.png?raw=true "Creating a Virtual Machine - Virtual Machine Options")
 
 	_Creating a Virtual Machine - Virtual Machine Options_
  
@@ -167,90 +166,70 @@ In this exercise, you will learn how to install and configure a Web Server in th
 
 In this task, you will install and configure an Apache HTTP Server and MySQL Database Management System.
 
-1. Install **Yast2**. In the terminal, execute the following commands to install the required packages.
+1. In the terminal, execute the following commands to install the required packages.
 
 	````Linux
-	zypper install yast2
-	zypper install yast2-ncurses
-	zypper install yast2-ncurses-pkg
-	zypper install yast2-qt
-	zypper install yast2-gtk
-	zypper install yast2-packager
-	zypper install yast2-network
-	zypper install yast2-http-server
-	zypper install yast2-runlevel
+	zypper install -t pattern lamp_server
 	````
 
-	>**Note**: If you get the following prompt "Do you want to reject the key, trust temporarily, or trust always? [r/t/a/?]", press a and then enter.
+	>**Note**: If you get the following prompt "Do you want to reject the key, trust temporarily, or trust always? [r/t/a/?]", press a and then enter. Pattern Lamp server installs only the needed packages for Lamp server.
 
-1. To install the prerequisites for Drupal you will use **Yast2** to automatically install Apache and MySQL with their dependencies. In the terminal, execute **Yast2**. This will open the **Yast2** application.
+1. Install the following packages in order to run PHP, MySQL (MariaDB distribution) and Apache2 in openSUSE.
 
 	````Linux
-	yast2
+	zypper install apache2 apache2-doc apache2-mod_php5 mariadb php5-gd php-db php5-mysql php5-json php5-dom php5-mbstring 
 	````
 
-1. Using the arrow keys from your keyboard, select **Software**, press the right arrow and select **Software Management** and hit **ENTER**.
+1. In order to start MySQL service, execute the following commands.
 
-	![YaST2 Control Center](Images/yast2-control-center.png?raw=true)
+	````Linux
+	systemctl enable mysql.service 
+	systemctl start mysql.service
+	````
 
-	_Software Management in YaST2_
+1. Execute the following commands in order to start Apache too.
 
-1. Press **ALT+F** to change the Filter type and select **Patterns**.
+	````Linux
+	systemctl enable apache2.service
+	systemctl start apache2.service
+	````
 
-	![Selecting the Patterns Filter](Images/selecting-the-patterns-filter.png?raw=true)
+	![Starting Apache and MySQL service](images/starting-apache-and-mysql-service.png?raw=true "Starting Apache and MySQL service")
 
-	_Selecting the Patterns Filter_
+	_Starting Apache and MySQL service_
 
-1. Scroll down the options until you find **Web and LAMP Server**. Press **ENTER** to select it, then press **ALT+T**, select **All listed packages...** and **Install All**.
 
-	>**NOTE**: When pressing enter you will see a plus beside Web and Lamp Server on the left side of the screen 
+#### Task 2 - Validating Apache and MySQL are running ####
 
-	![Installing Web and LAMP Server](Images/installing-web-and-lamp-server.png?raw=true)
+In this task you will check the status of MySQL and Apache service.
 
-	_Installing Web and LAMP Server_
+1. If not open, open ssl client and connect to the Virtual Machine
 
-1. Press **ALT+A** to start the installation. Press **ENTER** when prompted for confirmation.
-
-1. Once the installation is completed, the program will take you back to the main menu. Enter again the **Software Management**. Type **php5-json** to search for this package and hit **ENTER** to select it. Press **ALT+A** to start the installation.
-
-	![Installing PHP extensions](Images/installing-php-extensions.png?raw=true)
-
-	_Installing PHP extensions_
-
-1. Back to the main menu, press the left arrow key and select **Network Services**. Press the right arrow key, select **HTTP Server** and press **ENTER**.
-
-	![Configuring HTTP Server](Images/configuring-http-server.png?raw=true)
+1. Run the following command to check MySQL Service status
 	
-	_Configuring HTTP Server_
+	````Linux
+	service mysql status 
+	````
 
-1. Follow the Wizard steps pressing **F10** on each step to complete the configuration using the default values.
+	![MySQL Service Status](images/mysql-service-status.png?raw=true "MySQL Service Status")
 
-	![HTTP Service Setup Wizard](Images/http-service-setup-wizard.png?raw=true "HTTP Service Setup Wizard")
+	_MySQL Service Status_
 
-	_HTTP Service Setup Wizard_
+1. Run the following command to check Apache Service status
+	
+	````Linux
+	service apache2 status 
+	````
 
-1. Select **Network Services** and select **HTTP Server** again. Press **ALT+E** to enable the HTTP services and then press **ALT+F** to confirm the changes.
+	![Apache Server Status](images/apache-server-status.png?raw=true "Apache Server Status")
 
-	![Enabling HTTP service](Images/enabling-http-service.png?raw=true)
+	_Apache Server Status_
 
-	_Enabling HTTP service_
+1. Open **Internet Explorer** and browse the **DNS name** of the Virtual Machine to ensure apache is accessible through the Web.
+	
+	![Browser checking status](images/browser-checking-status.png?raw=true "Browser checking status")
 
-1. Back to the main menu, press the left arrow key and select **System** from the menu options. Press the right arrow and select **System Services (Runlevel)** and press **ENTER**.
-
-	![Configuring System Services](Images/configuring-system-services.png?raw=true)
-
-	_Configuring System Services_
-
-1. Scroll down until you find **mysql** and press **ALT+E** to enable the service. Wait until the service is running and press **Enter** on the confirmation message.
-
-	![Enabling MySQL service](Images/enabling-mysql-service.png?raw=true)
-
-	_Enabling MySQL service_
-
-
-1. Find **apache2** and press **ALT+E** to enable the service too. Wait until the service is running and press **Enter** on the confirmation message. Press **F10** to save the settings.
-
-1. Press **ALT+Q** to exit **YaST2**.
+	_Apache working_
 
 ---
 
