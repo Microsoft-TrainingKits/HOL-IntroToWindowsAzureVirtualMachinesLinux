@@ -172,7 +172,7 @@ In this task, you will install and configure an Apache HTTP Server and MySQL Dat
 	zypper install -t pattern lamp_server
 	````
 
-	>**Note**: If you get the following prompt "Do you want to reject the key, trust temporarily, or trust always? [r/t/a/?]", press a and then enter. Pattern Lamp server installs only the needed packages for Lamp server.
+	>**Note**: If you get the following prompt "Do you want to reject the key, trust temporarily, or trust always? [r/t/a/?]", press **A** and then **Enter**. Pattern Lamp server installs only the needed packages for Lamp server.
 
 1. Install the following packages in order to run PHP, MySQL (MariaDB distribution) and Apache2 in openSUSE.
 
@@ -245,7 +245,7 @@ In this exercise, you will install and configure the Drupal CMS in the Linux vir
 
 In this task, you will install and configure a Drupal portal on your Windows Azure Linux Virtual Machine. Additionally, you will create an empty database to be used by Drupal CMS.
 
-1. Open the root websites folder and create a folder named **drupal** by executing the following.
+1. Open the root websites folder and create a folder named **Drupal** by executing the following.
 
 	````Linux
 	cd /srv/www/htdocs
