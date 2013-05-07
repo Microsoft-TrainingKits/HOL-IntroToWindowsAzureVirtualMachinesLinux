@@ -194,7 +194,7 @@ In this task, you will install and configure an Apache HTTP Server and MySQL Dat
 	systemctl start apache2.service
 	````
 
-	![Starting Apache and MySQL service](images/starting-apache-and-mysql-service.png?raw=true "Starting Apache and MySQL service")
+	![Starting Apache and MySQL service](Images/starting-apache-and-mysql-service.png?raw=true "Starting Apache and MySQL service")
 
 	_Starting Apache and MySQL service_
 
@@ -211,7 +211,7 @@ In this task you will check the status of MySQL and Apache service.
 	service mysql status 
 	````
 
-	![MySQL Service Status](images/mysql-service-status.png?raw=true "MySQL Service Status")
+	![MySQL Service Status](Images/mysql-service-status.png?raw=true "MySQL Service Status")
 
 	_MySQL Service Status_
 
@@ -221,13 +221,13 @@ In this task you will check the status of MySQL and Apache service.
 	service apache2 status 
 	````
 
-	![Apache Server Status](images/apache-server-status.png?raw=true "Apache Server Status")
+	![Apache Server Status](Images/apache-server-status.png?raw=true "Apache Server Status")
 
 	_Apache Server Status_
 
 1. Open **Internet Explorer** and browse the **DNS name** of the Virtual Machine to ensure apache is accessible through the Web.
 	
-	![Browser checking status](images/browser-checking-status.png?raw=true "Browser checking status")
+	![Browser checking status](Images/browser-checking-status.png?raw=true "Browser checking status")
 
 	_Apache working_
 
