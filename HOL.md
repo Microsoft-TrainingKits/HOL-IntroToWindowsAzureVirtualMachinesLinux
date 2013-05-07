@@ -262,8 +262,8 @@ In this task, you will install and configure a Drupal portal on your Windows Azu
 1. Download and extract **Drupal**.
 
 	````Linux
-	wget http://drupal.org/files/projects/drupal-7.10.tar.gz
-	tar -xzf drupal-7.10.tar.gz --strip-components=1 
+	wget http://drupal.org/files/projects/drupal-7.22.tar.gz
+	tar -xzf drupal-7.22.tar.gz --strip-components=1 
 	````
 
 	![Downloading Drupal](Images/downloading-drupal.png?raw=true)
@@ -320,7 +320,7 @@ In this task, you will install and configure a Drupal portal on your Windows Azu
 	 
 	_Configuring a Drupal account_
 
-1. Click the **Visit your Web site** link to verify that the Drupal home page loads. 
+1. Click the **Visit your new site** link to verify that the Drupal home page loads. 
 
 	![Drupal CMS home page](Images/drupal-cms-home-page.png?raw=true)
 	 
