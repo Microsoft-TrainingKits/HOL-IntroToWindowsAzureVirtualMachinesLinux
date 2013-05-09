@@ -177,7 +177,7 @@ In this task, you will install and configure an Apache HTTP Server and MySQL Dat
 1. Install the following packages in order to run PHP, MySQL (MariaDB distribution) and Apache2 in openSUSE.
 
 	````Linux
-	zypper install apache2 apache2-doc apache2-mod_php5 mariadb php5-gd php-db php5-mysql php5-json php5-dom php5-mbstring 
+	zypper install apache2 apache2-doc apache2-mod_php5 apache2-example-pages mariadb php5-gd php-db php5-mysql php5-json php5-dom php5-mbstring 
 	````
 
 1. In order to start MySQL service, execute the following commands.
