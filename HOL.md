@@ -24,7 +24,7 @@ In this hands-on lab, you will learn how to:
 
 - A Windows Azure subscription - [sign up for a free trial](http://aka.ms/WATK-FreeTrial)
 
-> **Note:** This lab was designed to use **OpenSUSE** Linux distribution when creating the new Virtual Machine in Windows Azure.
+> **Note:** This lab was designed to use **openSUSE** Linux distribution when creating the new Virtual Machine in Windows Azure.
 
 ---
  
@@ -58,11 +58,11 @@ In this exercise, you will learn how to provision a Linux Virtual Machine in the
 
 	_Creating a new Virtual Machine_
  
-1. In the **Virtual Machine operating system selection** page, click **Platform Images** on the left menu and select the **OpenSUSE** OS image from the list. Click the arrow to continue.	
+1. In the **Virtual Machine operating system selection** page, click **Platform Images** on the left menu and select the **openSUSE** OS image from the list. Click the arrow to continue.	
 
-	![Selecting OpenSUSE from the image list](Images/creating-a-vm-suse.png?raw=true)	
+	![Selecting openSUSE from the image list](Images/creating-a-vm-suse.png?raw=true)	
 	 
-	_Selecting OpenSUSE from the image list_
+	_Selecting openSUSE from the image list_
 
 1. In the **Virtual Machine Configuration** page, enter a **Virtual Machine Name**. In the **Authentication** section, uncheck **Upload compatible ssh key for authentication** and check **Provide password**. Provide a password for the **New Password** and **Confirm Password** fields. Lastly, set the Virtual Machine **Size** to _Small_ and click **Next** to continue.
 
@@ -203,7 +203,7 @@ In this task, you will install and configure an Apache HTTP Server and MySQL Dat
 
 In this task you will check the status of MySQL and Apache service.
 
-1. If not open, open ssl client and connect to the Virtual Machine
+1. If not open, open SSL client and connect to the Virtual Machine
 
 1. Run the following command to check MySQL Service status
 	
@@ -288,7 +288,7 @@ In this task, you will install and configure a Drupal portal on your Windows Azu
 	mysqladmin create drupaldb
 	````
 
-1. Execute **mysql**. At the MySQL prompt execute the following query. Replace **username** and **password** with your user account.
+1. Execute **mysql** command. At the MySQL prompt execute the following query. Replace **username** and **password** with your user account.
 
 	````Linux
 	GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES	
